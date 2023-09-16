@@ -1,0 +1,76 @@
+.main {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.main.theme1 {
+  background: var(--key-bg1);
+}
+
+.main.theme2 {
+  background: var(--key-bg2);
+}
+
+.main.theme3 {
+  background: var(--key-bg3);
+}
+
+.main > section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 15px;
+  /* place-content: center; */
+  place-items: center;
+  /* background-color: red; */
+}
+
+.main > article {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  /* background-color: yellowgreen; */
+}
+
+.main.theme1 > article > button:first-of-type {
+  background-color: var(--key-bg1);
+  color: var(--text-white1);
+  box-shadow: 0 4px 0 var(--key-shadow1);
+}
+
+.main.theme2 > article > button:first-of-type {
+  background-color: var(--key-bg2);
+  color: var(--text-white2);
+  box-shadow: 0 4px 0 var(--key-shadow2);
+}
+
+.main.theme3 > article > button:first-of-type {
+  background-color: var(--key-bg3);
+  color: var(--text-white3);
+  box-shadow: 0 4px 0 var(--key-shadow3);
+}
+
+.main.theme1 > article > button:last-of-type {
+  background-color: var(--key-toggle-bg1);
+  color: var(--text-white1);
+  box-shadow: 0 4px 0 var(--key-shadow-dark1);
+}
+
+.main.theme2 > article > button:last-of-type {
+  background-color: var(--key-toggle-bg2);
+  color: var(--text-white2);
+  box-shadow: 0 4px 0 var(--key-shadow-dark2);
+}
+
+.main.theme3 > article > button:last-of-type {
+  background-color: var(--key-toggle-bg3);
+  color: var(--text-white3);
+  box-shadow: 0 4px 0 var(--key-shadow-dark3);
+}
+
+@media screen and (min-width: 600px) {
+  .main > article {
+    width: 90%;
+    margin: 15px auto;
+  }
+}

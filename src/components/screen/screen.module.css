@@ -1,0 +1,22 @@
+.main {
+  width: 100%;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 40px;
+}
+
+.main.theme1 {
+  background-color: var(--screen-bg1);
+}
+
+.main.theme2 {
+  background-color: var(--screen-bg2);
+}
+
+.main.theme3 {
+  background-color: var(--screen-bg3);
+}

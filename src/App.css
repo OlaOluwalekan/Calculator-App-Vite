@@ -51,11 +51,12 @@
   /* #### Backgrounds */
   --main-bg3: hsl(268, 75%, 9%);
   --toggle-keypad-bg3: hsl(268, 71%, 12%);
+  --screen-bg3: hsl(268, 71%, 12%);
   /* #### Keys */
   --key-bg3: hsl(281, 89%, 26%);
   --key-shadow3: hsl(285, 91%, 52%);
   --key-toggle-bg3: hsl(176, 100%, 44%);
-  --key-shadow3: hsl(177, 92%, 70%);
+  --key-shadow-dark3: hsl(177, 92%, 70%);
   --key-bg-violet: hsl(268, 47%, 21%);
   --key-shadow-magenta: hsl(290, 70%, 36%);
   /* #### Text */

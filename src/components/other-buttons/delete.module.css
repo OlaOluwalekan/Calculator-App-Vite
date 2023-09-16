@@ -1,0 +1,17 @@
+.main.theme1 {
+  background-color: var(--key-bg1);
+  color: var(--text-white1);
+  box-shadow: 0 5px 0 var(--key-shadow1);
+}
+
+.main.theme2 {
+  background-color: var(--key-bg2);
+  color: var(--text-white2);
+  box-shadow: 0 5px 0 var(--key-shadow2);
+}
+
+.main.theme3 {
+  background-color: var(--key-bg3);
+  color: var(--text-white3);
+  box-shadow: 0 5px 0 var(--key-shadow3);
+}
