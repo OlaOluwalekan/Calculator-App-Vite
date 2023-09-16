@@ -1,42 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* The designs were created to the following widths:
+
+- Mobile: 375px */
+/* - Desktop: 1440px */
+
+/* ## Colors */
+
+:root {
+  /* ### Theme 1 */
+  /* #### Backgrounds */
+  --main-bg1: hsl(222, 26%, 31%);
+  --toggle-keypad-bg1: hsl(223, 31%, 20%);
+  --screen-bg1: hsl(224, 36%, 15%);
+  /* #### Keys */
+  --key-bg1: hsl(225, 21%, 49%);
+  --key-shadow1: hsl(224, 28%, 35%);
+  --key-toggle-bg1: hsl(6, 63%, 50%);
+  --key-shadow-dark1: hsl(6, 70%, 34%);
+  --key-bg-orange1: hsl(30, 25%, 89%);
+  --key-shadow-orange1: hsl(28, 16%, 65%);
+  /* #### Text */
+  --text-dark-blue1: hsl(221, 14%, 31%);
+  --text-white1: hsl(0, 0%, 100%);
+
+  /* ### Theme 2 */
+  /* #### Backgrounds */
+  --main-bg2: hsl(0, 0%, 90%);
+  --toggle-keypad-bg2: hsl(0, 5%, 81%);
+  --screen-bg2: hsl(0, 0%, 93%);
+  /* #### Keys */
+  --key-bg2: hsl(185, 42%, 37%);
+  --key-shadow2: hsl(185, 58%, 25%);
+  --key-toggle-bg2: hsl(25, 98%, 40%);
+  --key-shadow-dark2: hsl(25, 99%, 27%);
+  --key-bg-yellow2: hsl(45, 7%, 89%);
+  --key-shadow-orange2: hsl(35, 11%, 61%);
+  /* #### Text */
+  --text-dark-yellow2: hsl(60, 10%, 19%);
+  --text-white2: hsl(0, 0%, 100%);
+
+  /* ### Theme 3 */
+  /* #### Backgrounds */
+  --main-bg3: hsl(268, 75%, 9%);
+  --toggle-keypad-bg3: hsl(268, 71%, 12%);
+  /* #### Keys */
+  --key-bg3: hsl(281, 89%, 26%);
+  --key-shadow3: hsl(285, 91%, 52%);
+  --key-toggle-bg3: hsl(176, 100%, 44%);
+  --key-shadow3: hsl(177, 92%, 70%);
+  --key-bg-violet: hsl(268, 47%, 21%);
+  --key-shadow-magenta: hsl(290, 70%, 36%);
+  /* #### Text */
+  --text-yellow3: hsl(52, 100%, 62%);
+  --text-dark-blue3: hsl(198, 20%, 13%);
+  --text-white3: hsl(0, 0%, 100%);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main.theme1 {
+  background: var(--main-bg1);
+  color: var(--text-white1);
+}
+
+.main.theme2 {
+  background: var(--main-bg2);
+  color: var(--text-dark-yellow2);
+}
+
+.main.theme3 {
+  background: var(--main-bg3);
+  color: var(--text-yellow3);
+}
+
+.main > div {
+  width: 300px;
+  height: 80vh;
+  /* background-color: hsl(222, 29%, 26%); */
+}
+
+.main.theme1 > div {
+  background-color: hsl(222, 29%, 26%);
+}
+
+.main.theme2 > div {
+  background-color: hsl(0, 4%, 95%);
+}
+
+.main.theme3 > div {
+  background-color: hsl(268, 79%, 7%);
+}
+
+@media screen and (min-width: 600px) {
+  .main > div {
+    width: 500px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

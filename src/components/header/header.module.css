@@ -1,0 +1,98 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.main.theme1 {
+  color: var(--text-white1);
+}
+
+/* LOGO */
+.main > p {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+/* THEME SELECT */
+.main > div {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* background-color: red; */
+}
+
+.main > div > article {
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.main > div > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main > div > div > p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* TOGGLER */
+.main > div > div > section {
+  width: 60px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.main > div > div > section {
+  position: relative;
+  cursor: pointer;
+}
+
+.main.theme1 > div > div > section {
+  background-color: var(--toggle-keypad-bg1);
+}
+
+.main.theme2 > div > div > section {
+  background-color: var(--toggle-keypad-bg2);
+}
+
+.main.theme3 > div > div > section {
+  background-color: var(--toggle-keypad-bg3);
+}
+
+.main > div > div > section > span {
+  width: 15px;
+  aspect-ratio: 1;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transition: all 200ms ease;
+}
+
+.main.theme1 > div > div > section > span {
+  transform: translateX(3px);
+  background-color: var(--key-toggle-bg1);
+}
+
+.main.theme2 > div > div > section > span {
+  transform: translateX(22.5px);
+  background-color: var(--key-toggle-bg2);
+}
+
+.main.theme3 > div > div > section > span {
+  transform: translateX(42px);
+  background-color: var(--key-toggle-bg3);
+}
